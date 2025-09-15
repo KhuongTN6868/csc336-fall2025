@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khuong Nguyen — Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">Khuong Nguyen</h1>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="resume.pdf">Resume</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="container section about-section">
+      <div class="about-grid">
+        <div>
+          <h2>About Me</h2>
+          <p>I’m a Computer Science major with a Data Science minor at American University, originally from Vietnam. I’m passionate about using technology and data to solve real-world problems and create practical solutions.
+I’ve built strong experience with Python, R, and SQL, and I enjoy working with tools like Pandas, NumPy, TensorFlow, and scikit-learn to build simulations, AI-powered apps, and data-driven insights.
+Fluent in both Vietnamese and English, I value collaboration across diverse teams. Outside of coding, I play piano and guitar, which fuels my creativity and discipline in tech projects.</p>
+          <a class="btn" href="resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume (PDF)</a>
+        </div>
+
+        <div class="profile-block">
+          <img class="profile" src="pic-1.jpg" alt="Khuong Nguyen" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+          <div class="no-image">Place <strong>pic-1.jpg</strong> in this folder to show your photo</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="container section">
+      <h2>Resume & Skills</h2>
+
+      <ul class="skills">
+        <li class="skill">Python</li>
+        <li class="skill">R</li>
+        <li class="skill">SQL</li>
+        <li class="skill">HTML/CSS</li>
+      </ul>
+
+       <h3>Experience</h3>
+      <div class="work-list">
+        <div class="work-item">
+          <h4>Data Science / Front-End, Back-End Intern — DC Witness</h4>
+          <p class="muted">Washington, DC | July 2025 – Present</p>
+          <ul>
+            <li>Contributed to public-interest journalism by building data pipelines with Python, Pandas, and MySQL.</li>
+            <li>Collaborated through GitHub and Slack to manage tasks and align with editors.</li>
+            <li>Explored frontend development using TypeScript and React to build dashboards and visualization tools.</li>
+          </ul>
+        </div>
+
+        <div class="work-item">
+          <h4>Product Operations Educator — Lululemon</h4>
+          <p class="muted">McLean, VA | April 2025 – Present</p>
+          <ul>
+            <li>Used RFID and inventory systems to streamline product tracking and allocation.</li>
+            <li>Enhanced fulfillment efficiency, contributing to a 30% increase in sales goal performance.</li>
+            <li>Applied data-driven planning to achieve 100% of monthly sales targets.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container section">
+      <h2>Projects</h2>
+      <div class="gallery">
+        <div class="card">
+          <h4>AI Housing Price Forecaster</h4>
+          <p class="details">
+            Python + SQL housing analytics app with ML models to forecast prices. 
+            Includes NLP for auto-generated summaries and an interactive frontend with map visualizations.
+          </p>
+        </div>
+
+        <div class="card">
+          <h4>Airport Simulation Project</h4>
+          <p class="details">
+            Python-based airport simulation using queues (FIFO) to manage takeoffs and landings, 
+            prioritizing safety and tracking performance metrics like wait times and runway idle percentage.
+          </p>
+        </div>
+
+        <div class="card">
+          <h4>Movie Success Analysis</h4>
+          <p class="details">
+            R-based team project analyzing success factors such as plot structure, cast performance, 
+            and budget through exploratory data analysis and visualization.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="hobbies" class="container section">
+      <h2>Hobbies</h2>
+      <div class="gallery">
+        <a class="card hobby-card" href="https://en.wikipedia.org/wiki/Volleyball" target="_blank" rel="noopener noreferrer">
+          <img src="volleyball.jpg" alt="Volleyball" class="hobby-img">
+          <h4>Volleyball</h4>
+          <p class="details">
+            Played competitively and placed 3rd nationally in club volleyball.
+          </p>
+        </a>
+
+        <a class="card hobby-card" href="https://en.wikipedia.org/wiki/Piano" target="_blank" rel="noopener noreferrer">
+          <img src="piano.jpg" alt="Piano" class="hobby-img">
+          <h4>Piano</h4>
+          <p class="details">
+            Took university performance classes to boost creativity.
+          </p>
+        </a>
+
+        <a class="card hobby-card" href="https://en.wikipedia.org/wiki/Guitar" target="_blank" rel="noopener noreferrer">
+          <img src="guitar.jpg" alt="Guitar" class="hobby-img">
+          <h4>Guitar</h4>
+          <p class="details">
+            Enjoy playing and learning music casually.
+          </p>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <p>Contact: <a href="mailto:Khuongtnguyen6868@gmail.com">Khuongtnguyen6868@gmail.com</a></p>
+      <p>&copy; 2025 Khuong Nguyen</p>
+    </div>
+  </footer>
+
+  <!-- Link to script -->
+  <script src="script.js"></script>
+</body>
+</html>
