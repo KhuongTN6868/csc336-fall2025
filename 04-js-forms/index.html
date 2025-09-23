@@ -1,0 +1,45 @@
+<html >
+    
+<head>
+  <title>Internship/Job Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Internship / Job Application Tracker</h1>
+  </header>
+
+  <main>
+    <form id="jobForm">
+      <label for="company">Company Name:</label>
+      <input type="text" id="company" name="company" required>
+
+      <label for="role">Role / Position:</label>
+      <input type="text" id="role" name="role" required>
+
+      <label for="dateApplied">Date Applied:</label>
+      <input type="date" id="dateApplied" name="dateApplied" required>
+
+      <label>Status:</label>
+      <select id="status" name="status" required>
+        <option value="">Select status</option>
+        <option value="Applied">Applied</option>
+        <option value="Interview">Interview</option>
+        <option value="Offer">Offer</option>
+        <option value="Rejected">Rejected</option>
+      </select>
+
+      <button type="submit">Add Application</button>
+      <div id="error" class="error"></div>
+    </form>
+
+    <h2>Applications:</h2>
+    <ul id="applicationsList">
+      <!-- Job applications will appear here -->
+    </ul>
+  </main>
+
+</body>
+</html>
