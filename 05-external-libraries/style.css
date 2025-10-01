@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #fff8f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #d62828;
+  color: white;
+  padding: 20px;
+}
+
+.pizza-img {
+  width: 300px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+button {
+  background-color: #f77f00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #ff9f1c;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 14px;
+}
