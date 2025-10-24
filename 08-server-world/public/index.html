@@ -1,0 +1,30 @@
+
+<html>
+<head>  
+    <title>My World Server</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <h1>Welcome to My World Server</h1>
+    <div id="world"></div>
+
+    <h2>Add a new member to your region</h2>
+    <form id="add-member-form">
+        <label for="member-name">Member Name:</label>
+        <input id="member-name" name="name" type="text" required>
+
+        <label for="member-role">Member Role:</label>
+        <input id="member-role" name="role" type="text" required>
+
+        <label for="region-select">Select Region:</label>
+        <select id="region-select" name="region" required>
+            <option value="Dragon World">Dragon World</option>
+            <option value="Snack Kingdom">Snack Kingdom</option>
+        </select>
+
+        <button type="submit">Add Member</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

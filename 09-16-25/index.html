@@ -1,0 +1,32 @@
+<html>
+
+
+  <head>
+    <title>Animals</title>
+    <link rel="stylesheet" href="style.css">
+    
+  <script src="animal.js"></script>
+
+  </head>
+
+
+    <div class="container">
+      <h2>Animal List</h2>
+      <ul id="all-animals-info" class="animal-list"></ul>
+      <h2>Add a New Animal</h2>
+      <form id="add-animal-form" autocomplete="off">
+        <label for="animal-type">Animal Type:</label>
+        <input id="animal-type" type="text" required>
+
+        <label for="animal-strength">Strength:</label>
+        <input id="animal-strength" type="number" min="1" max="20" required>
+
+        <label for="animal-charisma">Charisma:</label>
+        <input id="animal-charisma" type="number" min="1" max="20" required>
+
+        <button type="submit">Add Animal</button>
+      </form>
+    </div>
+    
+</body>
+</html>

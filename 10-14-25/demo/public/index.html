@@ -1,0 +1,65 @@
+<html>
+<head>
+
+
+
+</head>
+
+<body>
+    <div>Hello World</div>
+
+    <form id = "dataForm">
+        <label for = "name">Name:</label>
+        <input  id ="nameInput" name = "name" type = "text" />
+        <label for = "favoriteAnimal">Favorite Animal:</label>
+        <input  type = "text" name = "favoriteAnimal" />
+        <label for = "foodPreference">Food Preference:</label>
+        <input  type = "text" name = "foodPreference" />
+        <button type = "submit">CLICK</button>
+
+    </form>
+
+    <script>
+        let dataFormEL = document.querySelector("#dataForm");
+        dataFormEL.addEventListener("submit", async e => {
+           e.preventDefault();
+            let formData = new FormData(dataFormEL);
+            let entries = formData.entries();
+            // console.log(entries);
+            // for (let entry of entries) {
+            //     console.log(entry);
+            // }
+
+            //>> This is to reformat the entries into JSON object
+            // let data = {};
+            // for (let entry of entries){
+            //     data[entry[0]] = entry[1];
+
+            // }
+            let data = Object.fromEntries(formData.entries());
+            console.log(data);
+
+            let response = await fetch('/api/add', {
+                method: 'POST',
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify(data)
+            });
+
+            let responseJSON = await response.json();
+            console.log(responseJSON.name);
+
+
+
+
+
+
+
+            let nameInputEL = document.querySelector("#nameInput");
+            console.log(nameInputEL.value);
+
+
+
+        });
+    </script>
+</body>
+</html>

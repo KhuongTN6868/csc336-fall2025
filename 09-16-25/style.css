@@ -1,0 +1,9 @@
+.dice-roll{
+    front-size: 100px;
+    background-color: purple;
+}
+
+.stats{
+    display: flex;
+    gap: 20px;
+}

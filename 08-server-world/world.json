@@ -1,0 +1,83 @@
+{
+  "regions": [
+    {
+      "name": "Dragon World",
+      "climate": "Tropical",
+      "towns": [
+        {
+          "name": "Dark Forest",
+          "population": 100001,
+          "notable_people": [
+            {
+              "name": "King of Dragons",
+              "role": "Ruler",
+              "items": [
+                {
+                  "name": "Dragon claw",
+                  "rarity": "One of a kind"
+                }
+              ]
+            },
+            {
+              "name": "Dragon Trainer",
+              "role": "Trainer",
+              "items": [
+                {
+                  "name": "Dragon whistle",
+                  "rarity": "Rare"
+                }
+              ]
+            },
+            {
+              "name": "Khuong",
+              "role": "King",
+              "items": []
+            },
+            {
+              "name": "Khuong",
+              "role": "President ",
+              "items": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Snack Kingdom",
+      "climate": "Sugary",
+      "towns": [
+        {
+          "name": "Marshmallow Village",
+          "population": 50001,
+          "notable_people": [
+            {
+              "name": "Sir Crunch-a-lot",
+              "role": "Knight",
+              "items": [
+                {
+                  "name": "Chip Shield",
+                  "rarity": "Fragile"
+                }
+              ]
+            },
+            {
+              "name": "Queen Jelly",
+              "role": "Ruler",
+              "items": [
+                {
+                  "name": "Candy Crown",
+                  "rarity": "Legendary"
+                }
+              ]
+            },
+            {
+              "name": "Khuong",
+              "role": "President ",
+              "items": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
