@@ -1,46 +1,23 @@
-import { useState } from "react";
-import ListItem from "./components/ListItems.jsx";
-import MyButton from "./components/MyButton.jsx";
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import Home from "./Home.jsx";
+import About from "./About.jsx";
+import RandomDog from "./RandomDog.jsx";
 
 function App() {
-  const [items, setItems] = useState([
-    { text: "Go to Japan", important: true },
-    { text: "Learn React", important: false }
-  ]);
-
-  const [inputValue, setInputValue] = useState("");
-
-  function handleAdd() {
-    if (inputValue.trim() === "") return; 
-    setItems([...items, { text: inputValue, important: false }]);
-    setInputValue("");
-  }
-
   return (
-    <div>
-      <h1>My Dream List</h1>
+    <BrowserRouter>
+      <nav>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/dog">Random Dog</NavLink>
+      </nav>
 
-      {/* Input to add new items */}
-      <input 
-        type="text"
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)} 
-      />
-
-      {/* Using MyButton component */}
-      <MyButton onClick={handleAdd} text="Add Item" />
-
-      {/* Display the list */}
-      <ul>
-        {items.map((item, index) => (
-          <ListItem 
-            key={index}
-            text={item.text}
-            important={item.important}
-          />
-        ))}
-      </ul>
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/dog" element={<RandomDog />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
