@@ -1,7 +1,7 @@
 # Notes & Dogs — Full-Stack Student Project
 
 ## Deployed App
-Check out the live version here:
+Check out the live version here: https://csc336-fall2025-rc8x.onrender.com
 
 
 ## What it is / What it does
