@@ -8,7 +8,7 @@ export default function List() {
   async function loadItems() {
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:4000/api/items");
+      const res = await fetch("/api/items");   
       const data = await res.json();
       setItems(data);
     } catch (err) {
@@ -20,12 +20,12 @@ export default function List() {
   }
 
   async function toggleImportant(id) {
-    await fetch(`http://localhost:4000/api/items/${id}/toggle`, { method: "PATCH" });
+    await fetch(`/api/items/${id}/toggle`, { method: "PATCH" });  
     loadItems();
   }
 
   async function deleteItem(id) {
-    await fetch(`http://localhost:4000/api/items/${id}`, { method: "DELETE" });
+    await fetch(`/api/items/${id}`, { method: "DELETE" });  
     loadItems();
   }
 

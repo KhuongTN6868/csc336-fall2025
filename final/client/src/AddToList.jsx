@@ -15,16 +15,20 @@ export default function AddToList() {
 
     setSubmitting(true);
     try {
-      const res = await fetch("http://localhost:4000/api/items", {
+      const res = await fetch("/api/items", {   
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text: trimmed, important })
       });
+
       const data = await res.json();
+
       if (!res.ok) alert(data?.error || "Server rejected the note");
       else alert("Note added! Go to List page to see it.");
+
       setText("");
       setImportant(false);
+
     } catch (err) {
       console.error(err);
       alert("Network error");
@@ -45,7 +49,9 @@ export default function AddToList() {
           Important:
           <input type="checkbox" checked={important} onChange={e => setImportant(e.target.checked)} />
         </label>
-        <button type="submit" disabled={submitting} style={{ marginLeft: "10px" }}>{submitting ? "Adding…" : "Add"}</button>
+        <button type="submit" disabled={submitting} style={{ marginLeft: "10px" }}>
+          {submitting ? "Adding…" : "Add"}
+        </button>
       </form>
     </div>
   );

@@ -5,8 +5,13 @@
     "important": true
   },
   {
-    "id": "miz3qwu1",
-    "text": "Go to UK",
+    "id": "b2",
+    "text": "Learn React",
+    "important": false
+  },
+  {
+    "id": "miza2lve",
+    "text": "Go to Vietnam",
     "important": true
   }
 ]
